@@ -1,0 +1,47 @@
+/* pages/edit/edit.wxss */
+/* 修改界面 */
+.edit-container {
+  position: relative;
+  padding:20px 50rpx 20rpx;
+  justify-content:flex-start;
+  -webkit-justify-content:flex-start;
+  background-color: #FAFAFA;
+}
+/* 更改文字区域 */
+.edit_textarea {
+  flex: 1;
+  width:100%;
+  box-sizing:border-box;
+  font-size:36rpx;
+  line-height:60rpx;
+}
+/* 提示部分 */
+.tips-wrapper {
+  width:100%;
+  display:flex;
+  display: -webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content: spacce-between;
+
+  padding: 0 ;
+  box-sizing: border-box;
+  align-items: center;
+  -webkit-align-items: center;
+}
+/* 可输入字数提示 */
+.edit-tips {
+  font-size:30rpx;
+  color:#B2B2B2;
+  line-height: 50rpx;
+}
+/* 删除的垃圾桶图标 */
+.img-delete-all {
+  height:32rpx;
+  width:28rpx;
+}
+/* 删除内容 */
+.delete-content {
+  position: relative;
+  right: -20rpx;
+  padding:20rpx 20rpx;
+}

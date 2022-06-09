@@ -1,0 +1,90 @@
+/**index.wxss**/
+/* 背景样式 */
+.bg-image
+{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
+/* 页面样式 */
+.page{
+  
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 后台图片显示的窗口 */
+ .top_img{
+  border: 3px solid rgba(34, 33, 33, 0.726);
+  width: 59%;
+  height: 167px;
+  margin-top: 75px;
+  border-radius: 30rpx;
+
+} 
+/* 更换图片部分的样式 */
+.change_img{
+  /*border:#000 solid 2rpx;*/
+  height: 25px;
+  width: 100px;
+  padding: 5rpx,5rpx;
+  display: flex;
+  text-emphasis-style:inherit;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  margin-top: 10px;
+  color: #030303;
+  border: 3px solid rgba(34, 33, 33, 0.726);
+  border-radius: 30rpx;
+  background-color:rgb(241, 236, 227) ;
+  opacity: 95%;
+}
+/* 更新图片的图标 */
+.change_img image{
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  
+}
+/* 录音的按钮 */
+.audio_control{
+  margin-top: 47px;
+  width: 140rpx;
+  height: 140rpx;
+}
+/* 识别结果显示框 */
+.bottom{
+  border:2px solid rgba(0, 0, 0, 0.87);
+  background :rgb(241, 236, 227);
+  width: 70%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20rpx;
+  border-radius: 30rpx;
+}
+/* 播放录音的按钮 */
+.audio_play{
+  margin-left: 25rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 识别音频的按钮部分 */
+.get_recognize{
+    
+    width: 220px;
+    text-align: center;
+    background: rgb(241, 236, 227);
+    opacity: 96%; 
+    padding: 5px;
+    border-radius: 30rpx;
+    border: 3px solid rgba(5, 5, 5, 0.726);
+    color:rgba(18, 19, 19, 0.884);
+    margin-top: 35px;  
+}
+

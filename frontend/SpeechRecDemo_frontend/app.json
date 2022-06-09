@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/edit/edit",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#FAFAFA",
+    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarTitleText": "SAYWHAT语音识别",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#eeeeee",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "看图猜物",
+        "iconPath":"image/index/choice1.png",
+        "selectedIconPath":"image/index/choice1.png"
+      },
+      {
+       "pagePath": "pages/logs/logs",
+        "text": "中英互译",
+        "iconPath":"image/index/choice2.png",
+        "selectedIconPath":"image/index/choice2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

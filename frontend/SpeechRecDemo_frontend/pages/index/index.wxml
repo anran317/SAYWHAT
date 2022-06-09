@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<!-- 画面背景 -->
+<view>
+<image class="bg-image" mode="scaleToFill" src="../../image/index/background.png"> 
+</image>
+</view>
+<!-- 页面内容 -->
+<view class="page" >
+  <image class='top_img'  src="{{imgInfo.img_URL}}" mode="aspectFill"></image>
+  <view class='change_img'>
+    <text>更换图片</text>
+    <image src="../../image/index/refresh.png" bindtap="changeImage"></image>
+  </view>
+  
+  <image wx:if="{{start_record}}" class="audio_control" src="../../image/index/start_record.png" bindtap="startRecord"></image>
+  <image class="audio_control" wx:else src="../../image/index/stop_record.png"  bindtap="stopRecord"></image>
+
+  <view wx:if="{{content != ''}}" class="bottom">
+    <view style="display: flex;">
+      <view>识别结果：{{content == ''? '无': content}}</view>
+      <image wx:if="{{content != ''}}" class="audio_play" wx:if="{{speechInfo.speech_URL != ''}}" src="../../image/index/play_audio.png" bindtap="playAudio"></image>
+    </view>
+    <view>判定结果：{{judge}}</view>
+  </view>
+
+  <button  wx:else class="get_recognize" bindtap="uploadSpeech">识别音频</button>
+  
+  
+</view>
+

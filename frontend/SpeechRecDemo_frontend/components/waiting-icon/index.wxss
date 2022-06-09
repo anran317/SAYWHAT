@@ -1,0 +1,11 @@
+/* 对话框中等待说话的初始界面 */
+.loading {
+  position: relative;
+  display: inline;
+  
+}
+
+.loading-icon {
+  display: inline;
+  
+}
